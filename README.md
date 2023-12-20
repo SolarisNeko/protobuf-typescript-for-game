@@ -1,6 +1,7 @@
-<h1><p align="center"><img alt="google-protobuf" src="./protobuf.png" width="120" height="104" /></p></h1>
+<h1><p align="center"><img alt="google-protobuf" src="./.assets/protobuf.png" width="120" height="104" /></p></h1>
+<h2><p align="center">Protobuf for game dev</p></h2>
 
-![Alt text](image.png)
+![Alt text](./.assets/designer.png)
 
 **Protocol Buffers** by `google-protobuf` 
 
