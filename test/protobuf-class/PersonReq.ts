@@ -3,8 +3,8 @@
  * compiler version: 4.25.1
  * source: Person.proto
  * git: https://github.com/thesayyn/protoc-gen-ts */
- import * as pb_1 from "../google-protobuf";
- export class Person extends pb_1.Message {
+ import * as pb_1 from "../../google-protobuf";
+ export class PersonReq extends pb_1.Message {
      #one_of_decls: number[][] = [[3]];
      constructor(data?: any[] | ({
          name?: string;
@@ -60,8 +60,8 @@
          name?: string;
          id?: number;
          email?: string;
-     }): Person {
-         const message = new Person({});
+     }): PersonReq {
+         const message = new PersonReq({});
          if (data.name != null) {
              message.name = data.name;
          }
@@ -103,8 +103,8 @@
          if (!w)
              return writer.getResultBuffer();
      }
-     static deserialize(bytes: Uint8Array | pb_1.BinaryReader): Person {
-         const reader = bytes instanceof pb_1.BinaryReader ? bytes : new pb_1.BinaryReader(bytes), message = new Person();
+     static deserialize(bytes: Uint8Array | pb_1.BinaryReader): PersonReq {
+         const reader = bytes instanceof pb_1.BinaryReader ? bytes : new pb_1.BinaryReader(bytes), message = new PersonReq();
          while (reader.nextField()) {
              if (reader.isEndGroup())
                  break;
@@ -126,8 +126,8 @@
      serializeBinary(): Uint8Array {
          return this.serialize();
      }
-     static deserializeBinary(bytes: Uint8Array): Person {
-         return Person.deserialize(bytes);
+     static deserializeBinary(bytes: Uint8Array): PersonReq {
+         return PersonReq.deserialize(bytes);
      }
  }
  

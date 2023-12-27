@@ -1,0 +1,1 @@
+console.log('=============== protobuf-ts-for-game ===============')
